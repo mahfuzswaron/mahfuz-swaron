@@ -10,7 +10,7 @@ function App() {
     <>
       <header className="relative">
         <Navbar />
-        {/* <Banner /> */}
+        <Banner />
       </header>
       <main className="h-[1000px]">
 
