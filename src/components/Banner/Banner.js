@@ -6,7 +6,7 @@ const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["Web Developer."];
+    const toRotate = ["Web Developer"];
     const period = 500;
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -50,7 +50,15 @@ const Banner = () => {
                     <span className='text-primary font-medium'> Mahfuz </span>
                     Swaron
                 </h1>
-                <h3 className='text-[5rem] leading-none  text-primary '>{text}</h3>
+                <h3 className='text-[5rem] leading-none  text-primary '>{text} <span className='text-textBase font-thin'>|</span></h3>
+                <a
+                    className='btn btn-primary btn-outline btn-lg w-48 my-10'
+                    href={"https://drive.google.com/file/d/1DCzhN3Yik5MpzJoV1sns7XJCTy7_-INr/view?usp=sharing"}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    resume
+                </a>
             </div>
             <div className='flex justify-center items-center'>
                 <img src={codingImg} alt='coding' />
