@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import codingImg from "../../images/Code-typing-trans.gif"
+import codingImg from "../../images/Code-typing-trans.gif";
+import { motion } from 'framer-motion';
+
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -61,7 +63,11 @@ const Banner = () => {
                 </a>
             </div>
             <div className='flex justify-center items-center'>
-                <img src={codingImg} alt='coding' />
+                <motion.img
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 1 }}
+                    src={codingImg}
+                    alt='coding' />
             </div>
         </div>
     );
