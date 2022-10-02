@@ -14,8 +14,13 @@ body {
 :root{
   background-color: #0B1121;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#simple{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  background-color: #0B1121;
 }
