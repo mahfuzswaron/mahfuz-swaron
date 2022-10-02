@@ -8,7 +8,7 @@ import { FaTh } from "react-icons/fa";
 
 const Navbar = () => {
     const navLinks = [
-        { name: "home", path: "#", icon: AiOutlineHome },
+        { name: "home", path: "#home", icon: AiOutlineHome },
         { name: "about", path: "#about", icon: AiOutlineUser },
         { name: "skills", path: "#skills", icon: TbTriangleSquareCircle },
         { name: "projects", path: "#projects", icon: HiOutlineViewGrid },

@@ -41,7 +41,7 @@ const Skills = () => {
                     "Skills".split("").map((l, i) => <span key={l + i} className='hover:opacity-50 -m-[0.3rem]' >{l} </span>)
                 }
             </h3>
-            <div className='flex flex-wrap justify-center space-x- gap-10 my-10'>
+            <div className='flex flex-wrap justify-center gap-10 my-10'>
                 {
                     skills.map(s => <Skill key={s.name} s={s} />)
                 }

@@ -78,6 +78,7 @@ function App() {
         <main className="">
           <About />
           <Skills />
+          <Projects />
         </main>
         {/* <Footer></Footer> */}
       </div>

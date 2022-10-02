@@ -44,7 +44,7 @@ const Banner = () => {
     }
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-5 lg:px-20 pb-20 pt-36 '>
+        <div id='home' className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-5 lg:px-20 pb-20 pt-36 '>
             <div className=''>
                 <p className='text-[5rem] leading-none font-light'>Hello,</p>
                 <h1 className='text-[5rem] leading-none font-light'>
@@ -65,7 +65,7 @@ const Banner = () => {
             <div className='flex justify-center items-center'>
                 <motion.img
                     whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 0.5 }}
                     src={codingImg}
                     alt='coding' />
             </div>
