@@ -9,7 +9,7 @@ const Navbar = () => {
         { name: "contact", path: "#contact", },
     ]
     return (
-        <nav className='w-full h-10 px-5 lg:px-20 py-8 bg-base-100 bg-opacity-50 flex justify-between items-center fixed top-0  '>
+        <nav className='w-full h-10 px-5 lg:px-20 py-8 bg-base-100 bg-opacity-50 flex justify-between items-center fixed top-0 z-50 '>
             <h3 className='text-2xl text-primary '>Mahfuz</h3>
             <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="cursor-pointer">

@@ -72,8 +72,8 @@ function App() {
         <Navbar />
         <Banner />
       </header>
-      <main className="h-[1000px]">
-        {/* <About /> */}
+      <main className="">
+        <About />
         <Skills />
       </main>
       {/* <Footer></Footer> */}
