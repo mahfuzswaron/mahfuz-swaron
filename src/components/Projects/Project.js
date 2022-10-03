@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import { TbTriangleSquareCircle } from "react-icons/tb";
 import { TiTick } from "react-icons/ti";
+import Flickity from 'react-flickity-component';
+import "./Flitiky.css";
+
+const flickityOptions = {
+    initialIndex: 1
+}
 
 const Project = ({ project }) => {
     const { name, thumbnails, liveLink, githubClient, description, technologies, features } = project;
@@ -15,7 +21,13 @@ const Project = ({ project }) => {
             transition={{ duration: 1 }}
             className="card card-compact w-full bg-primary bg-opacity-30 shadow-xl"
         >
-            <figure><img className='w-full ' src={thumbnails[0]} alt={name} /></figure>
+            <Flickity>
+                {
+                    thumbnails.map(t => <img key={t} src={t} alt="thumbnail" />)
+                }
+            </Flickity>
+
+
             <div className="card-body">
 
                 <div className="flex justify-between">
