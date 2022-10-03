@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@blackbox-vision/react-particles": "^1.2.0",
+    "@emailjs/browser": "^3.7.0",
     "@tailwindcss/typography": "^0.5.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,6 +19,7 @@
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
     "react-special-cursor": "^1.2.1",
+    "react-toastify": "^9.0.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

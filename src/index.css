@@ -13,6 +13,8 @@ body {
 }
 :root{
   background-color: #0B1121;
+  --toastify-text-color-success: #38BDF8;
+  --toastify-color-success:#0B1121;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -36,4 +38,9 @@ code {
   height: 35px;
   transition: width 0.2s linear, height 0.2s linear;
   cursor: none;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  color: #38BDF8;
+  background: #0B1121;
 }

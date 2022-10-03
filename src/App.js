@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import { Particles } from '@blackbox-vision/react-particles';
@@ -79,6 +80,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </main>
         {/* <Footer></Footer> */}
       </div>

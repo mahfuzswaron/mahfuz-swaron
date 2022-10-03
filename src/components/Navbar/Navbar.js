@@ -21,7 +21,7 @@ const Navbar = () => {
                 <label tabIndex={0} className="cursor-pointer">
                     <FaTh className='text-2xl text-textBase hover:text-primary' />
                 </label>
-                <ul tabIndex={0} className="dropdown-content grid grid-cols-3 gap-5 p-5 shadow bg-base-100 bg-opacity-50 rounded-box w-52">
+                <ul tabIndex={0} className="dropdown-content grid grid-cols-3 gap-5 p-5 shadow bg-secondary bg-opacity-50 rounded-box w-52">
                     {
                         navLinks.map(l => (
                             <li>
