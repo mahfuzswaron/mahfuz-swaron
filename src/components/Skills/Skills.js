@@ -38,7 +38,7 @@ const Skills = () => {
         <section id='skills' className='px-5 lg:px-20 py-28'>
             <h3 className='text-5xl first-letter:text-primary my-20 '>
                 {
-                    "Skills".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-3 hover:text-[3.2rem] ' >{l} </span>)
+                    "Skills".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-1 hover:text-[3.2rem] ' >{l} </span>)
                 }
             </h3>
             <div className='flex flex-wrap justify-center gap-10 my-10'>

@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Link = ({ linkObj }) => {
     const { text, link } = linkObj;
     return <li className='my-5'>
-        <a className='text-3xl text-primary hover:border-b-2 border-primary pb-2 ' href={link} rel='noreferrer' target={"_blank"} >
+        <a className='text-3xl text-primary hover:border-b-2 border-primary pb-1 ' href={link} rel='noreferrer' target={"_blank"} >
             {text}
         </a>
     </li>
@@ -69,7 +69,7 @@ const Contact = () => {
             <h3 onClick={showToast}
                 className='text-5xl first-letter:text-primary my-20 '>
                 {
-                    "Contact".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-3 hover:text-[3.2rem]' >{l} </span>)
+                    "Contact".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-1 hover:text-[3.2rem]' >{l} </span>)
                 }
             </h3>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 '>

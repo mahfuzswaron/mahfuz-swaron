@@ -80,7 +80,7 @@ function App() {
           <Skills />
           <Projects />
           <Contact />
-          <a href="#home" className="bg-primary rounded-full flex justify-center items-center fixed bottom-[10%] right-[10%] w-10 h-10">
+          <a href="#home" className="bg-primary rounded-full flex justify-center items-center fixed bottom-[10%] right-[5%] w-10 h-10">
             < AiOutlineArrowUp className="text-[1rem] text-secondary" />
           </a>
         </main>
