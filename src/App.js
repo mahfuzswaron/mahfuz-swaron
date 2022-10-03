@@ -7,14 +7,13 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import { Particles } from '@blackbox-vision/react-particles';
 import Cursor from "react-special-cursor";
-
+import { AiOutlineArrowUp } from "react-icons/ai";
 function App() {
 
   return (
     <Cursor
-      color="#38BDF8"
     >
-      <div style={{ overflow: "hidden" }}>
+      <div style={{ overflow: "hidden", position: "relative" }}>
         <Particles
           id="simple"
           width="100vw"
@@ -81,6 +80,9 @@ function App() {
           <Skills />
           <Projects />
           <Contact />
+          <a href="#home" className="bg-primary rounded-full flex justify-center items-center fixed bottom-[10%] right-[10%] w-10 h-10">
+            < AiOutlineArrowUp className="text-[1rem] text-secondary" />
+          </a>
         </main>
         <Footer></Footer>
       </div>
