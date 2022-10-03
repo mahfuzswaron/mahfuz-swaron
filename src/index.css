@@ -6,8 +6,7 @@
 
 body {
   margin: 0;
-  font-family:'Poppins'
-    sans-serif;
+  font-family:'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,4 +42,13 @@ code {
 .Toastify__toast-theme--colored.Toastify__toast--success {
   color: #38BDF8;
   background: #0B1121;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #38BDF8;
+  border-radius: 0.25rem;
 }

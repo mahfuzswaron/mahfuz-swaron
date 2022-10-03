@@ -11,7 +11,7 @@ const Projects = () => {
                         whileHover={{ scale: 1.1 }}
                         transition={{ duration: 0.5 }}
                         key={l + i}
-                        className=' -m-[0.3rem] hover:text-primary hover:border-b border-1 border-primary pb-3 hover:text-[3.2rem]' >{l} </motion.span>)
+                        className=' -m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-3 hover:text-[3.2rem]' >{l} </motion.span>)
                 }
             </h3>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>

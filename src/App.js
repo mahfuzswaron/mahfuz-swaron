@@ -82,7 +82,7 @@ function App() {
           <Projects />
           <Contact />
         </main>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </Cursor>
   );
