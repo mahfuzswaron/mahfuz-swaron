@@ -3,12 +3,9 @@ import { motion } from 'framer-motion';
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import { TbTriangleSquareCircle } from "react-icons/tb";
 import { TiTick } from "react-icons/ti";
+import { BsStars } from "react-icons/bs";
 import Flickity from 'react-flickity-component';
 import "./Flitiky.css";
-
-const flickityOptions = {
-    initialIndex: 1
-}
 
 const Project = ({ project }) => {
     const { name, thumbnails, liveLink, githubClient, description, technologies, features } = project;
@@ -56,11 +53,12 @@ const Project = ({ project }) => {
                     </div>
                 </div>
                 <p>{description} </p>
-                {/* <span>Technologies used: </span> */}
-                <ul className='flex space-x-3 flex-wrap items-center' >
-                    <li>
-                        < TbTriangleSquareCircle className="text-2xl text-primary " />
-                    </li>
+                <span className='flex space-x-2 items-center'>
+                    < TbTriangleSquareCircle className="text-2xl text-primary " />
+                    <span>Technologies:</span>
+                </span>
+                <ul className='flex gap-3 flex-wrap items-center' >
+
                     {
                         technologies.map(t => <motion.li
                             key={t}
@@ -70,14 +68,17 @@ const Project = ({ project }) => {
                         </motion.li>)
                     }
                 </ul>
-                {/* <span>Features: </span> */}
-                <ul className='mt-1 ' >
+                <span className='flex space-x-2 items-center '>
+                    < BsStars className="text-2xl text-primary " />
+                    <span>Features:</span>
+                </span>
+                <ul className='' >
                     {
                         features.map(t => <motion.li
                             key={t}
-                            className="hover:text-primary flex justify-start items-center space-x-3"
+                            className="hover:text-primary flex justify-start items-center space-x-2"
                         >
-                            < TiTick className="text-2xl text-primary " />
+                            < TiTick className="text-xl text-primary " />
                             <span>{t} </span>
                         </motion.li>)
                     }

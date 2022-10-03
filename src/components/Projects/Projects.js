@@ -14,7 +14,7 @@ const Projects = () => {
                         className=' -m-[0.3rem] hover:text-primary hover:border-b border-1 border-primary pb-3 hover:text-[3.2rem]' >{l} </motion.span>)
                 }
             </h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-16'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 {
                     projects.map(p => <Project key={p.id} project={p} />)
                 }

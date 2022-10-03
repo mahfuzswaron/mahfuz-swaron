@@ -50,7 +50,7 @@ https://flickity.metafizzy.co
   position: absolute;
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
-  color: #333;
+  color: #38BDF8;
 }
 
 .flickity-button:hover {
@@ -75,15 +75,15 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button-icon {
-  fill: #333;
+  fill: #38BDF8;
 }
 
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
   top: 50%;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   /* vertically center */
   transform: translateY(-50%);
@@ -132,10 +132,10 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   margin: 0 8px;
-  background: #333;
+  background: #38BDF8;
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
