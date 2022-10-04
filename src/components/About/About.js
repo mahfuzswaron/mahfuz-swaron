@@ -10,7 +10,7 @@ const About = () => {
                     "About".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-1 hover:text-[3.2rem]' >{l} </span>)
                 }
             </h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 '>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 '>
                 <motion.div
                     className='relative '
                     initial={{ opacity: 0, scale: 0.9 }}

@@ -46,13 +46,13 @@ const Banner = () => {
     return (
         <div id='home' className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-5 lg:px-20 pb-20 pt-36 '>
             <div className=''>
-                <p className='text-[4.5rem] leading-none font-light'>Hello,</p>
-                <h1 className='text-[5rem] leading-none font-light'>
+                <p className='text-[4.5rem] md:text-[4rem] leading-none font-light'>Hello,</p>
+                <h1 className='text-[5rem] md:text-[4rem] leading-none font-light'>
                     I'm
                     <span className='text-primary font-medium'> Mahfuz </span>
                     Swaron
                 </h1>
-                <h3 className='text-[4.4rem] lg:text-[4.5rem] font-medium leading-none  text-primary '>{text} <span className='text-textBase font-thin'>|</span></h3>
+                <h3 className='text-[4.4rem] md:text-[4rem] lg:text-[4.5rem] font-medium leading-none  text-primary '>{text} <span className='text-textBase font-thin'>|</span></h3>
                 <a
                     className='btn btn-primary btn-outline btn-lg w-48 my-10'
                     href={"https://drive.google.com/file/d/1DCzhN3Yik5MpzJoV1sns7XJCTy7_-INr/view?usp=sharing"}
