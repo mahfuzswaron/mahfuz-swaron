@@ -52,3 +52,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #38BDF8;
   border-radius: 0.25rem;
 }
+
+@media (min-width: 1441px)  {
+  :root{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 374px)  {
+  :root{
+    font-size: 13px;
+  }
+}

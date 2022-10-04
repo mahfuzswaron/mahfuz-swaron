@@ -22,19 +22,9 @@ const links = [
 ]
 
 const Contact = () => {
+
     const form = useRef();
-    const showToast = () => {
-        toast.dark('Thanks for messaging me. I will reply soon.', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            progressClassName: "fancy-progress-bar"
-        });
-    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_77tsa48', 'template_kz0l0ds', form.current, 'dGRT_G2oWNSVKXjej')
@@ -66,8 +56,7 @@ const Contact = () => {
     }
     return (
         <div id="contact" className='px-5 lg:px-20 py-28 w-full'>
-            <h3 onClick={showToast}
-                className='text-5xl first-letter:text-primary my-20 '>
+            <h3 className='text-5xl first-letter:text-primary my-20 '>
                 {
                     "Contact".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-1 hover:text-[3.2rem]' >{l} </span>)
                 }
@@ -94,7 +83,7 @@ const Contact = () => {
                         <input required type="text" name="name" id="name" placeholder='Name' className='input input-primary bg-opacity-50 py-3' />
                         <input required type="email" name="email" id="email" placeholder='Email Address' className='input input-primary bg-opacity-50 py-3' />
                     </div>
-                    <textarea required name="message" id="message" placeholder='How can I assist you?' className='textarea textarea-primary bg-opacity-50 py-3 h-32' />
+                    <textarea required name="message" id="message" placeholder='How can I assist you?' className='textarea textarea-primary bg-opacity-50 py-3 h-44' />
                     <button type="submit" className="btn btn-primary w-full">
                         < IoMdSend className="text-3xl text-textBase" />
                     </button>
@@ -112,7 +101,6 @@ const Contact = () => {
                 draggable
                 pauseOnHover
             />
-            {/* Same as */}
             <ToastContainer />
         </div>
     );
