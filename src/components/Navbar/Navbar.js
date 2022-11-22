@@ -28,7 +28,7 @@ const Navbar = () => {
                 <ul tabIndex={0} className="dropdown-content grid grid-cols-3 gap-5 p-5 shadow bg-secondary bg-opacity-90 rounded-box w-52">
                     {
                         navLinks.map(l => (
-                            <li>
+                            <li key={l.name}>
                                 <a
                                     title={l.name}
                                     className='uppercase'
