@@ -13,7 +13,18 @@ function App() {
 
   return (
     <div style={{ overflow: "hidden", position: "relative" }}>
-      <AnimatedCursor />
+      <AnimatedCursor
+        color="255,255,255"
+        innerSize={20}
+        outerSize={35}
+        innerScale={1}
+        outerScale={1.4}
+        outerAlpha={0.2}
+        hasBlendMode={true}
+        outerStyle={{
+          mixBlendMode: 'exclusion'
+        }}
+      />
       <Particles
         id="simple"
         width="100vw"
