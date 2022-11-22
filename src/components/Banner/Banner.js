@@ -53,14 +53,20 @@ const Banner = () => {
                     Swaron
                 </h1>
                 <h3 className='text-[4.4rem] md:text-[4rem] lg:text-[4.5rem] font-medium leading-none  text-primary '>{text} <span className='text-textBase font-thin'>|</span></h3>
-                <a
-                    className='btn btn-primary btn-outline btn-lg w-48 my-10'
-                    href={"https://drive.google.com/file/d/1DCzhN3Yik5MpzJoV1sns7XJCTy7_-INr/view?usp=sharing"}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    resume
-                </a>
+                <div className='flex space-x-5 mb-5'>
+                    <a
+                        className='btn btn-primary btn-lg w-36 lg:w-48 my-10'
+                        href={"https://drive.google.com/file/d/1DCzhN3Yik5MpzJoV1sns7XJCTy7_-INr/view?usp=sharing"}
+                        target="_blank"
+                        rel="noreferrer"
+                    > resume </a>
+                    <a
+                        className='btn btn-primary btn-outline btn-lg w-36 lg:w-48  my-10'
+                        href={"#contact"}
+                        target="_blank"
+                        rel="noreferrer"
+                    > conact </a>
+                </div>
             </div>
             <div className='flex justify-center items-center'>
                 <motion.img
