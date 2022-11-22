@@ -1,5 +1,7 @@
 import { IoLogoReact, IoLogoNodejs, IoBarChartSharp } from "react-icons/io5";
-import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma } from "react-icons/si";
+import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma, SiAdobeillustrator } from "react-icons/si";
+import { TbLetterD } from "react-icons/tb";
+
 import { AiTwotoneMail } from "react-icons/ai";
 import sh1 from "./images/SHOHOJ-PAY.png";
 import sh2 from "./images/SHOHOJ-PAY-Dashboard.png"
@@ -27,6 +29,8 @@ export const skills = [
     { name: "EmailJS", icon: AiTwotoneMail, color: "#3FA037" },
     { name: "Bootstrap", icon: SiBootstrap, color: "#3FA037" },
     { name: "Tailwindcss", icon: SiTailwindcss, color: "#3FA037" },
+    { name: "D3.js", icon: TbLetterD, color: "#3FA037" },
+    { name: "Illustrator", icon: SiAdobeillustrator, color: "#3FA037" },
     { name: "Figma", icon: SiFigma, color: "#3FA037" },
     { name: "GitHub", icon: SiGithub, color: "#3FA037" },
 ];

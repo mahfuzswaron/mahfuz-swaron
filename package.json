@@ -13,12 +13,11 @@
     "flickity": "^2.3.0",
     "framer-motion": "^7.5.1",
     "react": "^18.2.0",
-    "react-cursor": "^2.0.15",
+    "react-animated-cursor": "^2.5.2",
     "react-dom": "^18.2.0",
     "react-flickity-component": "^3.6.3",
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
-    "react-special-cursor": "^1.2.1",
     "react-toastify": "^9.0.8",
     "web-vitals": "^2.1.4"
   },
