@@ -1,5 +1,5 @@
 import React from 'react';
-import mahfuzImg from "../../images/mahfuz-image.jpg"
+import mahfuzImg from "../../images/mahfuz_swaron.jpeg"
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
                         transition={{ duration: 0.5 }}
                     ></motion.div>
                     <motion.figure
-                        className=' w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 bg-white flex justify-center'
+                        className=' w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 bg-[#2C2431] flex justify-center'
                         whileHover={{ scale: 0.9 }}
                         transition={{ duration: 0.5 }}
                     >
