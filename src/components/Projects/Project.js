@@ -14,16 +14,20 @@ const Project = ({ project }) => {
             initial={{ opacity: 0.5, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 0.9 }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1 }}
             transition={{ duration: 1 }}
             className="card card-compact w-full bg-primary bg-opacity-30 shadow-xl"
         >
-            <Flickity>
-                {
-                    thumbnails.map(t => <img key={t} src={t} alt="thumbnail" />)
-                }
-            </Flickity>
+            <div className=''>
+                <Flickity className=''>
+                    {
+                        thumbnails.map(t => <div key={t} className='overflow-hidden w-full h-full'>
+                            <img
+                                className='object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-125' src={t} alt="thumbnail" />
+                        </div>)
+                    }
+                </Flickity>
 
+            </div>
 
             <div className="card-body">
 
@@ -54,7 +58,7 @@ const Project = ({ project }) => {
                 </div>
                 <p>{description} </p>
                 <span className='flex space-x-2 items-center'>
-                    < TbTriangleSquareCircle className="text-2xl text-primary " />
+                    < TbTriangleSquareCircle className="text-xl text-primary " />
                     <span>Technologies:</span>
                 </span>
                 <ul className='flex gap-3 flex-wrap items-center' >
@@ -69,7 +73,7 @@ const Project = ({ project }) => {
                     }
                 </ul>
                 <span className='flex space-x-2 items-center '>
-                    < BsStars className="text-2xl text-primary " />
+                    < BsStars className="text-xl text-primary " />
                     <span>Features:</span>
                 </span>
                 <ul className='' >
