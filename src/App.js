@@ -9,6 +9,7 @@ import { Particles } from '@blackbox-vision/react-particles';
 // import Cursor from "react-special-cursor";
 import AnimatedCursor from "react-animated-cursor";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import Services from "./components/Services/Services";
 function App() {
 
   return (
@@ -90,6 +91,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Services />
         <Contact />
         <a href="#home" className="bg-primary rounded-full flex justify-center items-center fixed bottom-[10%] right-[5%] w-10 h-10 hover:scale-125 ">
           < AiOutlineArrowUp className="text-[1rem] text-secondary" />

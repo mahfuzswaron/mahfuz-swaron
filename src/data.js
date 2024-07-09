@@ -9,6 +9,13 @@ import sh3 from "./images/SHOHOJ-PAY-services.png"
 import cv1 from "./images/cgpa-vaiya-1.png";
 import cv2 from "./images/cgpa-vaiya-2.png";
 
+// services images
+import webDevelopment from "./images/services/web-dev.png";
+import reactNextMigration from "./images/services/migration.png";
+import debugging from "./images/services/debugging.png";
+import emailSignature from "./images/services/Mail sent-amico.png";
+import emailTemplate from "./images/services/email-3d.png";
+
 
 export const skills = [
     { name: "MongoDB", icon: SiMongodb, color: "#3FA037" },
@@ -60,4 +67,37 @@ export const projects = [
 
     },
 
+];
+
+export const services = [
+    {
+        "id": "web-development-service",
+        "name": "Web Development",
+        "image": webDevelopment,
+        "description": "I can build a web application for you using modern technologies like React, Express, MongoDB, Firebase, etc. I can also help you to build a website using WordPress.",
+    },
+    {
+        "id": "react-next-migration-service",
+        "name": "React to Next",
+        "image": reactNextMigration,
+        "description": "I can help you to migrate your React.js website to Next.js. Next.js is a powerful React framework that provides a better performance, SEO, and developer experience.",
+    },
+    {
+        "id": "debugging-service",
+        "name": "Debugging",
+        "image": debugging,
+        "description": "I can help you to debug your website or web application. I can also help you to fix the bugs in your code and improve the performance of your website.",
+    },
+    {
+        "id": "email-signature-service",
+        "name": "Email Signature",
+        "image": emailSignature,
+        "description": "I can design a professional email signature for you. I can also help you to add the email signature to your email client like Gmail, Outlook"
+    },
+    {
+        "id": "email-template-service",
+        "name": "Email Template",
+        "image": emailTemplate,
+        "description": "I can design a professional email template for you. I can also help you to add the email template to your email client like Gmail, Outlook"
+    }
 ]

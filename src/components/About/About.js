@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div id="about" className='px-5 lg:px-20 py-28 w-full'>
+        <div id="about" className='px-5 lg:px-20 py-16 w-full'>
             <h3 className='text-5xl first-letter:text-primary my-20 '>
                 {
                     "About".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-1 hover:text-[3.2rem]' >{l} </span>)
