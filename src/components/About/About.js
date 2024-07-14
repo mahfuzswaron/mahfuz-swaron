@@ -1,6 +1,7 @@
 import React from 'react';
 import mahfuzImg from "../../images/mahfuz_swaron.jpeg"
 import { motion } from 'framer-motion';
+import { aboutQnAs } from '../../data';
 
 const About = () => {
     return (
@@ -31,22 +32,9 @@ const About = () => {
                     </motion.figure>
                 </motion.div>
                 <div className="" >
-                    <p className='whitespace-pre-line  text-xl leading-relaxed  font-sans '>
+                    <p className='whitespace-pre-line leading-relaxed font-sans '>
                         {
-
-                            `"Who am I", You ask?
-                    Mahfuz Swaron, a Web developer. Coding is my language. Keyboard is my mice. Linux is my home. Code with VsCode.
-
-                    "What do I know", you know?
-                    I know React.js, JavaScript, HTML, CSS, Express.js. 
-                    Familiar with Firebase, MongoDB, Heroku, and GitHub. Learning TypeScript, Node.js, and Next.js
-
-                    "Why do I code", you ask?
-                    I love to program machiene. Coding is the way for that. So, I express my thoughts in code.
-
-                    "How can I help you", You know?
-                    As a web developer I will develop excellent sites and feauters. And as a man, I will give my full effort with sincerity and honesty to take the company to the next level.
-                        `
+                            aboutQnAs.map((qna, i) => <AboutQnA key={i} qna={qna} />)
                         }
                     </p>
                 </div>
@@ -56,3 +44,21 @@ const About = () => {
 };
 
 export default About;
+
+
+const AboutQnA = ({ qna }) => {
+    const { question, subQuestion, answer } = qna;
+
+    return <div className='my-4'>
+        <span className='text-xl font-semibold block'>
+            <span className='text-primary'>{question}</span>
+            <span>, </span>
+            <span>{subQuestion}</span>
+            <span>?</span>
+        </span>
+        <span className='text-sm opacity-80'>
+            {answer}
+        </span>
+    </div>
+}
+

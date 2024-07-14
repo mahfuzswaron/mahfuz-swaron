@@ -100,4 +100,28 @@ export const services = [
         "image": emailTemplate,
         "description": "I can design a professional email template for you. I can also help you to add the email template to your email client like Gmail, Outlook"
     }
+];
+
+
+export const aboutQnAs = [
+    {
+        question: "Who am I",
+        subQuestion: "you know",
+        answer: "I'm Mahfuz Swaron, a passionate Web Developer. Coding isn't just a skill for me; it's my language. The keyboard is my pen, Linux is my home, and VSCode is my canvas where creativity meets functionality."
+    },
+    {
+        question: "What are my languages",
+        subQuestion: "you wonder",
+        answer: "I articulate my ideas through JavaScript, TypeScript, HTML, and CSS. I bring concepts to life using React.js, Next.js, Express.js, and MongoDB, weaving together technology and innovation."
+    },
+    {
+        question: "Why do I code",
+        subQuestion: "you ask",
+        answer: "I have an innate desire to program machines, to bring thoughts into the digital realm, and to solve problems through elegant solutions. Coding isn't just a profession; it's my passion."
+    },
+    {
+        question: "How can I help you",
+        subQuestion: "you ask",
+        answer: "As a 1.5 years experienced web developer, I am committed to creating exceptional applications that exceed expectations. As an individual, I am dedicated to putting in my utmost effort to propel your company to unprecedented heights. Let's build the future, together."
+    },
 ]
