@@ -14,6 +14,7 @@ const Project = ({ project }) => {
         <motion.div
             initial={{ opacity: 0.5, scale: 0.7 }}
             whileInView={{ opacity: 1, scale: 0.9 }}
+            whileHover={{ scale: 0.8 }}
             viewport={{ once: true }}
             transition={{ duration: ANIMATION_DURATION }}
             className="card card-compact w-full bg-primary bg-opacity-30 shadow-xl"
