@@ -46,22 +46,9 @@ const Banner = () => {
 
     return (
         <div id='home' className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-5 lg:px-20 pb-20 pt-36 '>
-            <div className='leading-tight'>
-                <p className='text-[2rem] md:text-[1.8rem] font-light'>Hello,</p>
-                <h1 className='text-[3rem] md:text-[2rem] font-light'>
-                    <span> I'm</span>
-                    <span className='text-primary font-medium'> Mahfuz </span>
-                    <span>Swaron</span>
-                </h1>
-                <h2 className='text-[2rem] md:text-[1.8rem] font-light'>
-                    <span>I can help </span>
-                    <span className='text-primary'>you </span>
-                    <span>in</span>
-                </h2>
-                <h3 className='text-[2.4rem] md:text-[2rem] lg:text-[2.5rem] font-medium  text-primary '>
-                    <span>{text} </span>
-                    <span className='text-textBase font-thin'>|</span>
-                </h3>
+            <div>
+                <Headline text={text} />
+
                 <div className='flex space-x-5 mb-5'>
                     <a
                         className='btn btn-primary btn-md w-48 my-10'
@@ -89,3 +76,25 @@ const Banner = () => {
 };
 
 export default Banner;
+
+const Headline = ({ text }) => {
+    return (
+        <div className='leading-tight h-[250px] sm:h-[180px] lg:h-[220px]'>
+            <p className='text-[2rem] md:text-[1.8rem] font-light'>Hello, </p>
+            <h1 className='text-[2.5rem] md:text-[2rem] font-light'>
+                <span>I'm</span>
+                <span className='text-primary font-medium'> Mahfuz </span>
+                <span>Swaron</span>
+            </h1>
+            <h2 className='text-[2rem] md:text-[1.8rem] font-light'>
+                <span>I can help </span>
+                <span className='text-primary'>you </span>
+                <span>in</span>
+            </h2>
+            <h3 className='text-[2.5rem] md:text-[2rem]  font-medium  text-primary '>
+                <span>{text} </span>
+                <span className='font-thin'>|</span>
+            </h3>
+        </div>
+    )
+}

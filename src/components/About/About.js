@@ -13,25 +13,7 @@ const About = () => {
                 }
             </h3>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 '>
-                <motion.div
-                    className='relative '
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: ANIMATION_DURATION }}
-                >
-                    <motion.div
-                        className='bg-primary opacity-5 border border-primary w-64 h-72 lg:w-96 lg:h-96 rounded-2xl relative lg:top-16 -top-5'
-                        whileHover={{ scale: 0.9 }}
-                        transition={{ duration: ANIMATION_DURATION }}
-                    ></motion.div>
-                    <motion.figure
-                        className='aspect-[4/3] overflow-clip w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 flex justify-center'
-                        whileHover={{ scale: 0.9 }}
-                        transition={{ duration: ANIMATION_DURATION }}
-                    >
-                        <img className='w-full h-auto object-cover rounded-2xl border border-primary' src={mahfuzImg} alt="mahfuz" />
-                    </motion.figure>
-                </motion.div>
+                <AboutImage />
                 <div className="" >
                     <p className='whitespace-pre-line leading-relaxed font-sans '>
                         {
@@ -63,3 +45,26 @@ const AboutQnA = ({ qna }) => {
     </div>
 }
 
+const AboutImage = () => {
+    return (
+        <motion.div
+            className='relative '
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: ANIMATION_DURATION }}
+        >
+            <motion.div
+                className='bg-primary opacity-5 border border-primary w-64 h-72 lg:w-96 lg:h-96 rounded-2xl relative lg:top-16 -top-5'
+                whileHover={{ scale: 0.9 }}
+                transition={{ duration: ANIMATION_DURATION }}
+            ></motion.div>
+            <motion.figure
+                className='aspect-[4/3] overflow-clip w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 flex justify-center'
+                whileHover={{ scale: 0.9 }}
+                transition={{ duration: ANIMATION_DURATION }}
+            >
+                <img className='w-full h-auto object-cover rounded-2xl border border-primary' src={mahfuzImg} alt="mahfuz" />
+            </motion.figure>
+        </motion.div>
+    )
+}
