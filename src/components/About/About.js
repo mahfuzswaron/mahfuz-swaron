@@ -2,6 +2,7 @@ import React from 'react';
 import mahfuzImg from "../../images/about-me/mahfuz-outline.jpg"
 import { motion } from 'framer-motion';
 import { aboutQnAs } from '../../data';
+import { ANIMATION_DURATION } from '../../utils/constants';
 
 const About = () => {
     return (
@@ -16,17 +17,17 @@ const About = () => {
                     className='relative '
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: ANIMATION_DURATION }}
                 >
                     <motion.div
                         className='bg-primary opacity-5 border border-primary w-64 h-72 lg:w-96 lg:h-96 rounded-2xl relative lg:top-16 -top-5'
                         whileHover={{ scale: 0.9 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: ANIMATION_DURATION }}
                     ></motion.div>
                     <motion.figure
                         className=' w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 flex justify-center'
                         whileHover={{ scale: 0.9 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: ANIMATION_DURATION }}
                     >
                         <img className='h-full w-auto rounded-2xl border border-primary' src={mahfuzImg} alt="mahfuz" />
                     </motion.figure>

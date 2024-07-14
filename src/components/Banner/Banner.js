@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import codingImg from "../../images/Code-typing-trans.gif";
 import { motion } from 'framer-motion';
+import { ANIMATION_DURATION } from "../../utils/constants";
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -8,7 +9,7 @@ const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["Web Developer"];
+    const toRotate = ["Web Development", "Migrating to Next.js", "Debugging Application", "Email Signature", "Email Template"];
     const period = 500;
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -37,7 +38,7 @@ const Banner = () => {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setIndex(1);
-            setDelta(500);
+            setDelta(100);
         } else {
             setIndex(prevIndex => prevIndex + 1);
         }
@@ -45,33 +46,41 @@ const Banner = () => {
 
     return (
         <div id='home' className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-5 lg:px-20 pb-20 pt-36 '>
-            <div className=''>
-                <p className='text-[4.5rem] md:text-[4rem] leading-none font-light'>Hello,</p>
-                <h1 className='text-[5rem] md:text-[4rem] leading-none font-light'>
-                    I'm
+            <div className='leading-tight'>
+                <p className='text-[2rem] md:text-[1.8rem] font-light'>Hello,</p>
+                <h1 className='text-[3rem] md:text-[2rem] font-light'>
+                    <span> I'm</span>
                     <span className='text-primary font-medium'> Mahfuz </span>
-                    Swaron
+                    <span>Swaron</span>
                 </h1>
-                <h3 className='text-[4.4rem] md:text-[4rem] lg:text-[4.5rem] font-medium leading-none  text-primary '>{text} <span className='text-textBase font-thin'>|</span></h3>
+                <h2 className='text-[2rem] md:text-[1.8rem] font-light'>
+                    <span>I can help </span>
+                    <span className='text-primary'>you </span>
+                    <span>in</span>
+                </h2>
+                <h3 className='text-[2.4rem] md:text-[2rem] lg:text-[2.5rem] font-medium  text-primary '>
+                    <span>{text} </span>
+                    <span className='text-textBase font-thin'>|</span>
+                </h3>
                 <div className='flex space-x-5 mb-5'>
                     <a
-                        className='btn btn-primary btn-lg w-36 lg:w-48 my-10'
+                        className='btn btn-primary btn-md w-48 my-10'
+                        href={"https://calendar.app.google/STztv6tyE4eZ7Txy9"}
+                        target="_blank"
+                        rel="noreferrer"
+                    > Let's discuss </a>
+                    <a
+                        className='btn btn-outline btn-md w-36  my-10'
                         href={"https://drive.google.com/file/d/1DCzhN3Yik5MpzJoV1sns7XJCTy7_-INr/view?usp=sharing"}
                         target="_blank"
                         rel="noreferrer"
                     > resume </a>
-                    <a
-                        className='btn btn-primary btn-outline btn-lg w-36 lg:w-48  my-10'
-                        href={"#contact"}
-                        target="_blank"
-                        rel="noreferrer"
-                    > conact </a>
                 </div>
             </div>
             <div className='flex justify-center items-center'>
                 <motion.img
                     whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: ANIMATION_DURATION }}
                     src={codingImg}
                     alt='coding' />
             </div>

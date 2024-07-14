@@ -5,11 +5,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "../../index.css";
 import { motion } from "framer-motion";
+import { ANIMATION_DURATION } from '../../utils/constants';
 
 const Link = ({ linkObj }) => {
     const { text, link } = linkObj;
     return <li className='my-5'>
-        <a className='text-3xl text-primary hover:border-b-2 border-primary pb-1 ' href={link} rel='noreferrer' target={"_blank"} >
+        <a className='text-3xl text-primary hover:border-b-2 border-primary pb-1' href={link} rel='noreferrer' target={"_blank"} >
             {text}
         </a>
     </li>
@@ -65,7 +66,7 @@ const Contact = () => {
                 <motion.ul
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: ANIMATION_DURATION }}
                     viewport={{ once: true }}
                 >
                     {
@@ -77,7 +78,7 @@ const Contact = () => {
                     initial={{ opacity: 0.5, scale: 0.5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: ANIMATION_DURATION }}
                     ref={form} onSubmit={handleSubmit} className=' grid grid-cols-1 gap-3 font-sans' >
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
                         <input required type="text" name="name" id="name" placeholder='Name' className='input input-primary bg-opacity-50 py-3' />

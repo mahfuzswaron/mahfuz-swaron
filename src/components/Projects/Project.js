@@ -6,15 +6,16 @@ import { TiTick } from "react-icons/ti";
 import { BsStars } from "react-icons/bs";
 import Flickity from 'react-flickity-component';
 import "./Flitiky.css";
+import { ANIMATION_DURATION } from '../../utils/constants';
 
 const Project = ({ project }) => {
     const { name, thumbnails, liveLink, githubClient, description, technologies, features } = project;
     return (
         <motion.div
-            initial={{ opacity: 0.5, scale: 0.5 }}
+            initial={{ opacity: 0.5, scale: 0.7 }}
             whileInView={{ opacity: 1, scale: 0.9 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: ANIMATION_DURATION }}
             className="card card-compact w-full bg-primary bg-opacity-30 shadow-xl"
         >
             <div className=''>
@@ -36,7 +37,7 @@ const Project = ({ project }) => {
                     <div className="flex justify-start space-x-6">
                         <motion.a
                             whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: ANIMATION_DURATION }}
                             title="open live site"
                             href={liveLink}
                             target="_blank"
@@ -46,7 +47,7 @@ const Project = ({ project }) => {
                         </motion.a>
                         <motion.a
                             whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: ANIMATION_DURATION }}
                             title="source code"
                             href={githubClient}
                             target="_blank"
