@@ -1,8 +1,6 @@
-import { IoLogoReact, IoLogoNodejs, IoBarChartSharp } from "react-icons/io5";
-import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma, SiAdobeillustrator } from "react-icons/si";
-import { TbLetterD } from "react-icons/tb";
+import { IoLogoReact, IoLogoNodejs } from "react-icons/io5";
+import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma, SiAdobeillustrator, SiNextdotjs } from "react-icons/si";
 
-import { AiTwotoneMail } from "react-icons/ai";
 import sh1 from "./images/SHOHOJ-PAY.png";
 import sh2 from "./images/SHOHOJ-PAY-Dashboard.png"
 import sh3 from "./images/SHOHOJ-PAY-services.png"
@@ -21,15 +19,12 @@ export const skills = [
     { name: "MongoDB", icon: SiMongodb, color: "#3FA037" },
     { name: "Express", icon: SiExpress, color: "#3FA037" },
     { name: "React", icon: IoLogoReact, color: "#3FA037" },
+    { name: "Next", icon: SiNextdotjs, color: "#3FA037" },
     { name: "Node", icon: IoLogoNodejs, color: "#3FA037" },
-    { name: "Redux-toolkit", icon: SiRedux, color: "#3FA037" },
-    { name: "Firebase", icon: SiFirebase, color: "#3FA037" },
-    { name: "Rechart", icon: IoBarChartSharp, color: "#3FA037" },
-    { name: "React-Router", icon: SiReactrouter, color: "#3FA037" },
-    { name: "EmailJS", icon: AiTwotoneMail, color: "#3FA037" },
+    { name: "Redux", icon: SiRedux, color: "#3FA037" },
+    { name: "Router", icon: SiReactrouter, color: "#3FA037" },
     { name: "Bootstrap", icon: SiBootstrap, color: "#3FA037" },
     { name: "Tailwindcss", icon: SiTailwindcss, color: "#3FA037" },
-    { name: "D3.js", icon: TbLetterD, color: "#3FA037" },
     { name: "Illustrator", icon: SiAdobeillustrator, color: "#3FA037" },
     { name: "Figma", icon: SiFigma, color: "#3FA037" },
     { name: "GitHub", icon: SiGithub, color: "#3FA037" },
