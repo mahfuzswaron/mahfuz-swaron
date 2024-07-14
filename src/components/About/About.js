@@ -25,11 +25,11 @@ const About = () => {
                         transition={{ duration: ANIMATION_DURATION }}
                     ></motion.div>
                     <motion.figure
-                        className=' w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 flex justify-center'
+                        className='aspect-[4/3] overflow-clip w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 flex justify-center'
                         whileHover={{ scale: 0.9 }}
                         transition={{ duration: ANIMATION_DURATION }}
                     >
-                        <img className='h-full w-auto rounded-2xl border border-primary' src={mahfuzImg} alt="mahfuz" />
+                        <img className='w-full h-auto object-cover rounded-2xl border border-primary' src={mahfuzImg} alt="mahfuz" />
                     </motion.figure>
                 </motion.div>
                 <div className="" >
