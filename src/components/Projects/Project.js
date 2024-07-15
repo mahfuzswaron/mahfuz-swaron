@@ -1,12 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
-import { TbTriangleSquareCircle } from "react-icons/tb";
-import { TiTick } from "react-icons/ti";
-import { BsStars } from "react-icons/bs";
-import Flickity from 'react-flickity-component';
-import "./Flitiky.css";
 import { ANIMATION_DURATION } from '../../utils/constants';
+
 
 const Project = ({ project }) => {
     const { name, thumbnails, liveLink, githubClient, description, technologies, features } = project;
@@ -17,24 +13,22 @@ const Project = ({ project }) => {
             whileHover={{ scale: 0.8 }}
             viewport={{ once: true }}
             transition={{ duration: ANIMATION_DURATION }}
-            className="card card-compact w-full bg-primary bg-opacity-30 shadow-xl"
+            className="card w-full h-full bg-primary bg-opacity-30 shadow-xl"
         >
-            <div className=''>
-                <Flickity className=''>
-                    {
-                        thumbnails.map(t => <div key={t} className='overflow-hidden w-full h-full'>
-                            <img
-                                className='object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-125' src={t} alt="thumbnail" />
-                        </div>)
-                    }
-                </Flickity>
-
+            {/* aspect-video overflow-hidden max-h-fit */}
+            <div
+                className='aspect-[4/3] h-full w-full border border-primary'
+            >
+                {
+                    thumbnails.map(t =>
+                        <img className='h-full w-full' src={t} alt="thumbnail" />
+                    )
+                }
             </div>
 
             <div className="card-body">
-
                 <div className="flex justify-between">
-                    <h2 className="card-title">{name} </h2>
+                    <h2 className="card-title">{name}</h2>
                     <div className="flex justify-start space-x-6">
                         <motion.a
                             whileHover={{ scale: 1.1 }}
@@ -59,36 +53,7 @@ const Project = ({ project }) => {
                     </div>
                 </div>
                 <p>{description} </p>
-                <span className='flex space-x-2 items-center'>
-                    < TbTriangleSquareCircle className="text-xl text-primary " />
-                    <span>Technologies:</span>
-                </span>
-                <ul className='flex gap-3 flex-wrap items-center' >
 
-                    {
-                        technologies.map(t => <motion.li
-                            key={t}
-                            className="hover:text-primary"
-                        >
-                            {t}
-                        </motion.li>)
-                    }
-                </ul>
-                <span className='flex space-x-2 items-center '>
-                    < BsStars className="text-xl text-primary " />
-                    <span>Features:</span>
-                </span>
-                <ul className='' >
-                    {
-                        features.map(t => <motion.li
-                            key={t}
-                            className="hover:text-primary flex justify-start items-center space-x-2"
-                        >
-                            < TiTick className="text-xl text-primary " />
-                            <span>{t} </span>
-                        </motion.li>)
-                    }
-                </ul>
             </div>
         </motion.div>
     );

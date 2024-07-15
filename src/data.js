@@ -1,11 +1,8 @@
 import { IoLogoReact, IoLogoNodejs } from "react-icons/io5";
 import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma, SiAdobeillustrator, SiNextdotjs } from "react-icons/si";
 
-import sh1 from "./images/SHOHOJ-PAY.png";
-import sh2 from "./images/SHOHOJ-PAY-Dashboard.png"
-import sh3 from "./images/SHOHOJ-PAY-services.png"
-import cv1 from "./images/cgpa-vaiya-1.png";
-import cv2 from "./images/cgpa-vaiya-2.png";
+import shohojPay from "./images/project-thumbnail-shohoj-pay.jpg";
+import cgpaVaiya from "./images/project-thumbnail-cgpa-vaiya.jpg"
 
 // services images
 import webDevelopment from "./images/services/web-dev.png";
@@ -33,7 +30,7 @@ export const skills = [
 export const projects = [
     {
         "name": "Shohoj Pay",
-        "thumbnails": [sh1, sh2, sh3],
+        "thumbnails": [shohojPay],
         "id": "project1",
         "liveLink": "https://shohoj-pay-app.web.app/",
         "githubClient": "https://github.com/mahfuzswaron/shohoj-pay-client",
@@ -48,7 +45,7 @@ export const projects = [
     },
     {
         "name": "CGPA Vaiya",
-        "thumbnails": [cv1, cv2],
+        "thumbnails": [cgpaVaiya],
         "id": "cgpa-vaiya",
         "liveLink": "https://cgpa-vaiya.netlify.app/",
         "githubClient": "https://github.com/mahfuzswaron/cgpa-vaiya",
