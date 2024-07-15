@@ -1,32 +1,25 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { skills } from "../../data";
+import { ANIMATION_DURATION } from "../../utils/constants";
 
 const Skill = ({ s }) => {
     const [show, setShow] = useState(false);
     return (
         <motion.div
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1 }}
             whileTap={{ scale: 0.9 }}
+            durattion={ANIMATION_DURATION}
             onMouseOver={() => setShow(true)}
             onMouseLeave={() => setShow(false)}
             onClick={() => setShow(!show)}
-            className={`bg-primary bg-opacity-30 w-20 h-20 lg:w-28 lg:h-28 p-5 rounded-full flex justify-center items-center `}>
+            className={`bg- bg-opacity-30 w-20 h-20 lg:w-28 lg:h-28 p-5 rounded-full flex justify-center items-center shadow-primary shadow-md  transition duration-500 ease-in-out`}>
 
             {
                 show ?
-                    <motion.p
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                        className='text-xs' >{s.name}</motion.p>
-                    : <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        < s.icon className='text-5xl' />
-                    </motion.div>
+                    <p className="text-xs">{s.name}</p>
+                    :
+                    < s.icon className='text-5xl text-primary' />
             }
         </motion.div >
     )
