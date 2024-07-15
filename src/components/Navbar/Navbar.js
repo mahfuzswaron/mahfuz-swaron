@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineFilePdf, AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
-import { TbTriangleSquareCircle } from "react-icons/tb";
+import { TbTriangleSquareCircle, TbSettingsCode } from "react-icons/tb";
 import { HiOutlineChatAlt, HiOutlineViewGrid, } from "react-icons/hi";
 import { VscMenu } from "react-icons/vsc";
 
@@ -11,6 +11,7 @@ const Navbar = () => {
         { name: "about", path: "#about", icon: AiOutlineUser },
         { name: "skills", path: "#skills", icon: TbTriangleSquareCircle },
         { name: "projects", path: "#projects", icon: HiOutlineViewGrid },
+        { name: "services", path: "#services", icon: TbSettingsCode },
         { name: "contact", path: "#contact", icon: HiOutlineChatAlt },
     ];
     return (
