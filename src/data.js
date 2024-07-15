@@ -1,15 +1,15 @@
-import { IoLogoReact, IoLogoNodejs } from "react-icons/io5";
-import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma, SiAdobeillustrator, SiNextdotjs } from "react-icons/si";
+import { IoLogoReact, IoLogoNodejs, IoLogoWebComponent, IoBug } from "react-icons/io5";
+import { SiExpress, SiRedux, SiMongodb, SiBootstrap, SiTailwindcss, SiFirebase, SiGithub, SiReactrouter, SiFigma, SiAdobeillustrator, SiNextdotjs, SiGmail } from "react-icons/si";
 
 import shohojPay from "./images/project-thumbnail-shohoj-pay.jpg";
 import cgpaVaiya from "./images/project-thumbnail-cgpa-vaiya.jpg"
 
-// services images
-import webDevelopment from "./images/services/web-dev.png";
-import reactNextMigration from "./images/services/migration.png";
-import debugging from "./images/services/debugging.png";
-import emailSignature from "./images/services/Mail sent-amico.png";
-import emailTemplate from "./images/services/email-3d.png";
+// services icons
+import { BsWindow } from "react-icons/bs";
+import { LiaMailBulkSolid } from "react-icons/lia";
+import { MdOutlineAttachEmail } from "react-icons/md";
+import { VscDebugConsole } from "react-icons/vsc";
+import { TbBrandNextjs } from "react-icons/tb";
 
 
 export const skills = [
@@ -65,31 +65,31 @@ export const services = [
     {
         "id": "web-development-service",
         "name": "Web Development",
-        "image": webDevelopment,
+        "icon": BsWindow,
         "description": "I can build a web application for you using modern technologies like React, Express, MongoDB, Firebase, etc. I can also help you to build a website using WordPress.",
     },
     {
         "id": "react-next-migration-service",
         "name": "React to Next",
-        "image": reactNextMigration,
+        "icon": TbBrandNextjs,
         "description": "I can help you to migrate your React.js website to Next.js. Next.js is a powerful React framework that provides a better performance, SEO, and developer experience.",
     },
     {
         "id": "debugging-service",
         "name": "Debugging",
-        "image": debugging,
+        "icon": VscDebugConsole,
         "description": "I can help you to debug your website or web application. I can also help you to fix the bugs in your code and improve the performance of your website.",
     },
     {
         "id": "email-signature-service",
         "name": "Email Signature",
-        "image": emailSignature,
+        "icon": MdOutlineAttachEmail,
         "description": "I can design a professional email signature for you. I can also help you to add the email signature to your email client like Gmail, Outlook"
     },
     {
         "id": "email-template-service",
         "name": "Email Template",
-        "image": emailTemplate,
+        "icon": LiaMailBulkSolid,
         "description": "I can design a professional email template for you. I can also help you to add the email template to your email client like Gmail, Outlook"
     }
 ];
