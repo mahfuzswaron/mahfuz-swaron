@@ -7,17 +7,12 @@ import { ANIMATION_DURATION } from '../../utils/constants';
 const Project = ({ project }) => {
     const { name, thumbnails, liveLink, githubClient, description, technologies, features } = project;
     return (
-        <motion.div
-            initial={{ opacity: 0.5, scale: 0.7 }}
-            whileInView={{ opacity: 1, scale: 0.9 }}
-            whileHover={{ scale: 0.8 }}
-            viewport={{ once: true }}
-            transition={{ duration: ANIMATION_DURATION }}
-            className="card w-full h-full bg-primary bg-opacity-30 shadow-xl"
+        <div
+            className="card card-compact w-full sm:max-w-[80vw] md:w-80 lg:w-96 border-2 border-transparent hover:border-primary shadow-primary shadow-md rounded-lg p-5 transition duration-500 ease-in-out"
         >
             {/* aspect-video overflow-hidden max-h-fit */}
             <div
-                className='aspect-[4/3] h-full w-full border border-primary'
+                className='aspect-[4/3] h-full w-full'
             >
                 {
                     thumbnails.map(t =>
@@ -53,9 +48,8 @@ const Project = ({ project }) => {
                     </div>
                 </div>
                 <p>{description} </p>
-
             </div>
-        </motion.div>
+        </div>
     );
 };
 

@@ -49,7 +49,7 @@ export const projects = [
         "id": "cgpa-vaiya",
         "liveLink": "https://cgpa-vaiya.netlify.app/",
         "githubClient": "https://github.com/mahfuzswaron/cgpa-vaiya",
-        "description": "CGPA Vaiya is a CGPA predictor application built using web technologies. It estimates the required GPA that need to be earned in the remaining semesters to achieve a particular CGPA required by the student.It is designed as a chatbot application that provides it functionalities to the user in a chatting manner.",
+        "description": "CGPA Vaiya is a CGPA predictor application built using React.js. It estimates the required CGPA that need to be earned in the remaining semesters to achieve a particular CGPA required by the student.It is designed as a chatbot application that provides it functionalities to the user in a chatting manner.",
         "technologies": ["React", "Express", "Tailwind"],
         "features": [
             "Predicts CGPA List to gain a certain CGPA",
