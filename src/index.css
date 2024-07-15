@@ -6,20 +6,24 @@
 
 body {
   margin: 0;
-  font-family:'Poppins';
+  font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-:root{
+
+:root {
   background-color: #0B1121;
   --toastify-text-color-success: #38BDF8;
-  --toastify-color-success:#0B1121;
+  --toastify-color-success: #0B1121;
+  font-size: 16px;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#simple{
+
+#simple {
   z-index: -1;
   position: fixed;
   top: 0;
@@ -53,14 +57,21 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0.25rem;
 }
 
-@media (min-width: 1441px)  {
-  :root{
+@media (min-width: 1441px) {
+  :root {
     font-size: 24px;
   }
 }
 
-@media (max-width: 374px)  {
-  :root{
+@media (max-width: 374px) {
+  :root {
     font-size: 13px;
   }
+}
+
+@media screen and (min-width: 2000px) {
+  :root {
+    font-size: 34px;
+  }
+
 }

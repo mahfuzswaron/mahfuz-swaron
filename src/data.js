@@ -103,12 +103,12 @@ export const aboutQnAs = [
     },
     {
         question: "What are my languages",
-        subQuestion: "you wonder",
+        subQuestion: "you ask",
         answer: "I articulate my ideas through JavaScript, TypeScript, HTML, and CSS. I bring concepts to life using React.js, Next.js, Express.js, and MongoDB, weaving together technology and innovation."
     },
     {
         question: "Why do I code",
-        subQuestion: "you ask",
+        subQuestion: "you wonder",
         answer: "I have an innate desire to program machines, to bring thoughts into the digital realm, and to solve problems through elegant solutions. Coding isn't just a profession; it's my passion."
     },
     {

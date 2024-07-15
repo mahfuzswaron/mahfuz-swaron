@@ -46,7 +46,7 @@ const Banner = () => {
     }
 
     return (
-        <div id='home' className='grid grid-cols-1 md:grid-cols-2  px-5 lg:px-20 pb-20 pt-20 lg:pt-36 '>
+        <div id='home' className='grid grid-cols-1 md:grid-cols-2 px-5 lg:px-20 pb-20 pt-20 lg:pt-36 '>
             <div className='flex flex-col gap-y-5 h-[350px] justify-center self-center'>
                 <Headline text={text} />
 
@@ -65,9 +65,9 @@ const Banner = () => {
                     > resume </a>
                 </div>
             </div>
-            <div className='flex lg:justify-end'>
+            <div className='flex md:flex-end xl:justify-center'>
                 <motion.img
-                    className='w-80'
+                    className='w-80 xl:w-96'
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: ANIMATION_DURATION }}
                     src={codingImg}

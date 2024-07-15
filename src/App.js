@@ -6,7 +6,6 @@ import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import { Particles } from '@blackbox-vision/react-particles';
-// import Cursor from "react-special-cursor";
 import AnimatedCursor from "react-animated-cursor";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Services from "./components/Services/Services";
