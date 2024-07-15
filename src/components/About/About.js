@@ -3,16 +3,13 @@ import mahfuzImg from "../../images/about-me/mahfuz-outline.jpg"
 import { motion } from 'framer-motion';
 import { aboutQnAs } from '../../data';
 import { ANIMATION_DURATION } from '../../utils/constants';
+import SectionHeader from '../shared/SectionHeader';
 
 const About = () => {
     return (
         <div id="about" className='px-5 lg:px-20 py-16 w-full'>
-            <h3 className='text-5xl first-letter:text-primary my-20 '>
-                {
-                    "About".split("").map((l, i) => <span key={l + i} className='-m-[0.4rem] hover:text-primary hover:border-b border-1 border-primary pb-1 hover:text-[3.2rem]' >{l} </span>)
-                }
-            </h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 '>
+            <SectionHeader title='About' />
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center'>
                 <AboutImage />
                 <div className="" >
                     <p className='whitespace-pre-line leading-relaxed font-sans '>
@@ -54,12 +51,12 @@ const AboutImage = () => {
             transition={{ duration: ANIMATION_DURATION }}
         >
             <motion.div
-                className='bg-primary opacity-5 border border-primary w-64 h-72 lg:w-96 lg:h-96 rounded-2xl relative lg:top-16 -top-5'
+                className='bg-primary opacity-5 border border-primary w-64 h-72 lg:w-96 lg:h-96 rounded-2xl relative -top-5 lg:top-0'
                 whileHover={{ scale: 0.9 }}
                 transition={{ duration: ANIMATION_DURATION }}
             ></motion.div>
             <motion.figure
-                className='aspect-[4/3] overflow-clip w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-24 lg:left-8 left-5 flex justify-center'
+                className='aspect-[4/3] overflow-clip w-64 h-72 lg:w-96 lg:h-96 rounded-2xl absolute top-0 lg:top-10 lg:left-10 left-5 flex justify-center'
                 whileHover={{ scale: 0.9 }}
                 transition={{ duration: ANIMATION_DURATION }}
             >
